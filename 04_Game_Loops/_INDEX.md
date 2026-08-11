@@ -4,4 +4,4 @@ Bucles, flujos y secuencias repetibles de juego.
 
 ## Documentos
 
-Actualmente no hay documentos formales.
+- [[LOOP-001_Progresion_Economia_y_Conflicto|Bucles de progresion, economia y conflicto]]

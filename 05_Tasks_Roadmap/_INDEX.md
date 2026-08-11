@@ -4,4 +4,4 @@ Tareas, hitos, prioridades y planificación del proyecto.
 
 ## Documentos
 
-Actualmente no hay documentos formales.
+- [[TASK-001_Procesamiento_de_Brainstorming|Procesamiento del brainstorming de sistemas]]

@@ -4,4 +4,4 @@ Arquitectura, red, persistencia, herramientas y especificaciones de implementaci
 
 ## Documentos
 
-Actualmente no hay documentos formales.
+- [[TEC-001_Comunicacion_de_Grupos|Comunicacion de parties y command channels]]
