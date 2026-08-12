@@ -46,3 +46,22 @@ vigente.
 5. Revisa contradicciones, duplicados y enlaces antes de confirmar.
 
 Consulta `AGENTS.md` para las reglas completas del vault.
+
+## Sitio web
+
+La documentacion se publica con MkDocs Material en GitHub Pages. El workflow
+de GitHub Actions construye el sitio en cada push a `main` y excluye
+unicamente `00_Brainstorming/`; el resto de los archivos Markdown se copia al
+sitio publicado.
+
+Para reproducir la build localmente:
+
+```bash
+python -m pip install -r requirements.txt
+python .mkdocs/prepare.py
+mkdocs build --strict --config-file .mkdocs/mkdocs.yml
+```
+
+La primera ejecucion requiere habilitar GitHub Pages en el repositorio usando
+la fuente **GitHub Actions**. El workflow administra las publicaciones
+posteriores automaticamente.

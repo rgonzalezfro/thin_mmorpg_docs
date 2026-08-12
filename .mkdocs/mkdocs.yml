@@ -1,0 +1,62 @@
+site_name: MMORPG 3D Low-Poly Modular
+site_description: Documentacion de diseno, sistemas y especificaciones del MMORPG.
+site_url: https://rgonzalezfro.github.io/thin_mmorpg_docs/
+repo_url: https://github.com/rgonzalezfro/thin_mmorpg_docs
+repo_name: rgonzalezfro/thin_mmorpg_docs
+docs_dir: content
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: README.md
+  - Reglas del vault: AGENTS.md
+  - Sistemas centrales:
+      - Indice: 01_Core_Systems/_INDEX.md
+      - Progresion, clases y estadisticas: 01_Core_Systems/SYS-001_Progression_Classes_Stats.md
+      - Leveleo individual y cooperativo: 01_Core_Systems/SYS-002_Leveleo_Solo_y_Grupo.md
+      - Organizaciones de jugadores: 01_Core_Systems/SYS-003_Organizaciones_de_Jugadores.md
+      - Facciones y PVP: 01_Core_Systems/SYS-004_Facciones_y_PVP.md
+  - Contenido y entidades:
+      - Indice: 02_Content_Entities/_INDEX.md
+      - Clases, armas y arquetipos: 02_Content_Entities/CNT-001_Clases_Armas_y_Arquetipos.md
+      - Profesiones y crafteo: 02_Content_Entities/CNT-002_Profesiones_Crafteo_y_Objetos.md
+      - Roleo y cosmeticos: 02_Content_Entities/CNT-003_Roleo_y_Cosmeticos.md
+  - Especificaciones tecnicas:
+      - Indice: 03_Tech_Specs/_INDEX.md
+      - Comunicacion de grupos: 03_Tech_Specs/TEC-001_Comunicacion_de_Grupos.md
+  - Bucles de juego:
+      - Indice: 04_Game_Loops/_INDEX.md
+      - Progresion, economia y conflicto: 04_Game_Loops/LOOP-001_Progresion_Economia_y_Conflicto.md
+  - Tareas y roadmap:
+      - Indice: 05_Tasks_Roadmap/_INDEX.md
+      - Procesamiento del brainstorming: 05_Tasks_Roadmap/TASK-001_Procesamiento_de_Brainstorming.md
