@@ -39,8 +39,6 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Inicio: README.md
-  - Reglas del vault: AGENTS.md
   - Sistemas centrales:
       - Indice: 01_Core_Systems/_INDEX.md
       - Progresion, clases y estadisticas: 01_Core_Systems/SYS-001_Progression_Classes_Stats.md
