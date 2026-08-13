@@ -9,3 +9,4 @@ Arquitectura, red, persistencia, herramientas y especificaciones de implementaci
 - [[TEC-003_Procesamiento_Automatico_de_Brainstorming|Procesamiento automatico de brainstorming]]
 - [[TEC-003_Partidas_Privadas_Hosting_y_Migracion|Partidas privadas, hosting y migracion de mundos]]
 - [[TEC-004_Arquitectura_Godot_Nakama_y_Empaquetado|Arquitectura de simulacion Godot, backend Nakama y empaquetado]]
+- [[TEC-005_Arquitectura_Godot_Nakama_y_Servidor_Local|Arquitectura de servidor local, Godot y Nakama]]
