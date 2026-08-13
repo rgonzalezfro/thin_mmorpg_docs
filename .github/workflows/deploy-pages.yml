@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "00_Brainstorming/**"
   workflow_dispatch:
 
 permissions:
