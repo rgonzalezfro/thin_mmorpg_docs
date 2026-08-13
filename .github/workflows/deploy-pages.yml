@@ -4,8 +4,15 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "00_Brainstorming/**"
+    paths:
+      - "**/*.md"
+      - "!00_Brainstorming/**"
+      - "!README.md"
+      - "!**/README.md"
+      - "!AGENT.md"
+      - "!**/AGENT.md"
+      - "!AGENTS.md"
+      - "!**/AGENTS.md"
   workflow_dispatch:
 
 permissions:
