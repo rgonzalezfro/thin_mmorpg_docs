@@ -32,9 +32,9 @@ La portada debe enlazar con los indices de:
 - `04_Game_Loops/`: bucles de juego.
 - `05_Tasks_Roadmap/`: tareas y roadmap.
 
-La portada se genera durante la preparacion de MkDocs en
-`.mkdocs/content/index.md`. No debe guardarse como un documento adicional en
-la raiz del vault.
+La portada se mantiene como `INDEX.md` en la raiz del vault de Obsidian. El
+preparador de MkDocs copia ese archivo al contenido temporal y lo utiliza como
+pagina inicial del sitio.
 
 ## Criterio de publicacion
 
