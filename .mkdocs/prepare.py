@@ -9,6 +9,24 @@ DESTINATION = ROOT / ".mkdocs" / "content"
 EXCLUDED_DIRECTORIES = {"00_Brainstorming", ".git", ".mkdocs", "site"}
 EXCLUDED_FILES = {"agent.md", "agents.md", "readme.md"}
 WIKILINK_PATTERN = re.compile(r"\[\[([^\]|#]+)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]")
+INDEX_CONTENT = """# MMORPG 3D Low-Poly Modular
+
+Documentacion de diseno, sistemas y especificaciones del MMORPG.
+
+## Indice general
+
+- [Sistemas centrales](01_Core_Systems/_INDEX.md): reglas compartidas del juego.
+- [Contenido y entidades](02_Content_Entities/_INDEX.md): clases, objetos, profesiones y cosmeticos.
+- [Especificaciones tecnicas](03_Tech_Specs/_INDEX.md): arquitectura, comunicacion y herramientas.
+- [Bucles de juego](04_Game_Loops/_INDEX.md): progresion, economia y conflicto.
+- [Tareas y roadmap](05_Tasks_Roadmap/_INDEX.md): trabajo pendiente y prioridades.
+
+## Criterio de publicacion
+
+Este sitio publica los documentos Markdown del vault, excepto `00_Brainstorming/`,
+`README.md`, `AGENT.md` y `AGENTS.md`. El brainstorming se conserva en el
+repositorio, pero no forma parte de la documentacion publica.
+"""
 
 
 def is_excluded(relative):
@@ -71,6 +89,7 @@ def main():
         shutil.rmtree(DESTINATION)
     DESTINATION.mkdir(parents=True)
     documents = document_map()
+    (DESTINATION / "index.md").write_text(INDEX_CONTENT, encoding="utf-8")
 
     for source in ROOT.rglob("*.md"):
         relative = source.relative_to(ROOT)
