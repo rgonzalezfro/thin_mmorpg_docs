@@ -54,6 +54,7 @@ nav:
   - Especificaciones tecnicas:
       - Indice: 03_Tech_Specs/_INDEX.md
       - Comunicacion de grupos: 03_Tech_Specs/TEC-001_Comunicacion_de_Grupos.md
+      - Indice publico y publicacion: 03_Tech_Specs/TEC-002_Indice_Publico_y_Publicacion.md
   - Bucles de juego:
       - Indice: 04_Game_Loops/_INDEX.md
       - Progresion, economia y conflicto: 04_Game_Loops/LOOP-001_Progresion_Economia_y_Conflicto.md

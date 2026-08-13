@@ -26,6 +26,9 @@ Documentacion de diseno, sistemas y especificaciones del MMORPG.
 Este sitio publica los documentos Markdown del vault, excepto `00_Brainstorming/`,
 `README.md`, `AGENT.md` y `AGENTS.md`. El brainstorming se conserva en el
 repositorio, pero no forma parte de la documentacion publica.
+
+La especificacion de esta estructura se encuentra en
+[Indice publico y publicacion de documentacion](03_Tech_Specs/TEC-002_Indice_Publico_y_Publicacion.md).
 """
 
 
