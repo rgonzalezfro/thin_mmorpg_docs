@@ -4,6 +4,7 @@ site_url: https://rgonzalezfro.github.io/thin_mmorpg_docs/
 repo_url: https://github.com/rgonzalezfro/thin_mmorpg_docs
 repo_name: rgonzalezfro/thin_mmorpg_docs
 docs_dir: content
+site_dir: site
 
 theme:
   name: material

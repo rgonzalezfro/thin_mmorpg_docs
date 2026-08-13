@@ -36,10 +36,13 @@ jobs:
       - name: Build site
         run: mkdocs build --strict --config-file .mkdocs/mkdocs.yml
 
+      - name: Verify build output
+        run: ls -la .mkdocs/site
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: .mkdocs/site
 
   deploy:
     environment:
